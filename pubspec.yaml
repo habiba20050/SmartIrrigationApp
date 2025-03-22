@@ -36,12 +36,17 @@ dependencies:
   cupertino_icons: ^1.0.8
 
   http: ^1.2.1  # Use the latest version available
-  mobile_scanner: ^5.1.1
-  syncfusion_flutter_pdfviewer: ^24.1.41
-  path_provider: ^2.1.2
+  mobile_scanner: ^6.0.7
+  syncfusion_flutter_pdfviewer: ^28.2.9
+  path_provider: ^2.1.5
   file_picker: ^9.0.2
-  syncfusion_flutter_gauges: ^24.2.9
+  syncfusion_flutter_gauges: ^28.2.11
   google_fonts: ^6.1.0 # Use the latest version available
+  path_provider_windows: ^2.3.0
+  syncfusion_pdfviewer_windows: ^28.2.9
+  url_launcher_windows: ^3.1.4
+  url_launcher: ^6.3.1
+  device_info_plus: ^11.3.2
 
 dev_dependencies:
   flutter_test:

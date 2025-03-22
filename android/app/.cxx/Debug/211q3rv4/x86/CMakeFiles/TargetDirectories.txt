@@ -1,0 +1,2 @@
+C:/Users/loda/Desktop/SmartIrrigationApp/android/app/.cxx/Debug/211q3rv4/x86/CMakeFiles/edit_cache.dir
+C:/Users/loda/Desktop/SmartIrrigationApp/android/app/.cxx/Debug/211q3rv4/x86/CMakeFiles/rebuild_cache.dir
