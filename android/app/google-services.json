@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "125446034251",
+    "firebase_url": "https://smartirregation-default-rtdb.firebaseio.com",
+    "project_id": "smartirregation",
+    "storage_bucket": "smartirregation.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125446034251:android:73fd97770dd3f2512acece",
+        "android_client_info": {
+          "package_name": "com.agnefits.smartirregation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125446034251-basg0mds5gdg3u6algu4k819g056c4gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUfj5kPiOVDdvzTgm231qk7Lq8RrQw2OU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125446034251-basg0mds5gdg3u6algu4k819g056c4gp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "125446034251-8mh146kkb91v1kpn0jcohj5u4hat0avf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.agnefits.smartirregation"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

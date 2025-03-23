@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smartirregation/shared/remote/firebase_helper.dart';
 import 'weather_page.dart';
 import 'time_based_page.dart';
 import 'moisture_level_page.dart';
@@ -23,6 +24,7 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0; // Track active tab
 
   void _logout(BuildContext context) {
+    FirebaseHelper.logout();
     Navigator.pushNamedAndRemoveUntil(context, '/login', (route) => false);
   }
 
