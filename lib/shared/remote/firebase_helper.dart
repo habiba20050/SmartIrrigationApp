@@ -157,7 +157,7 @@ class FirebaseHelper {
 
   // Update Data (Realtime Database)
   static Future<void> updateRealtimeData(
-      {required String path, required dynamic data}) async {
+      {required String path, required Map<String, Object?>  data}) async {
     await _database.ref(path).update(data);
   }
 

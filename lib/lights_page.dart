@@ -1,5 +1,7 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:smartirregation/shared/remote/firebase_helper.dart';
 
 class LightsPage extends StatefulWidget {
   const LightsPage({super.key});
@@ -10,23 +12,25 @@ class LightsPage extends StatefulWidget {
 
 class _LightsPageState extends State<LightsPage> {
   bool isLightOn = false; // Initial state
+  String bumpPath = "Systems/SmartIrrigation/lights/1";
 
-  void toggleLight() async {
+  void toggleLight() {
     setState(() {
       isLightOn = !isLightOn;
+      FirebaseHelper.updateRealtimeData(
+          path: bumpPath, data: {"value": isLightOn});
     });
-
-    // Haptic Feedback (Vibration)
-    HapticFeedback.lightImpact();
-
-    // IoT Integration (Replace with actual API/MQTT call)
-    final String status = isLightOn ? 'ON' : 'OFF';
-    await sendLightStatusToServer(status);
   }
 
-  Future<void> sendLightStatusToServer(String status) async {
-    // Placeholder for future IoT API or MQTT integration
-    print('Light status sent to server: $status');
+  @override
+  void initState() {
+    super.initState();
+    FirebaseHelper.getRealtimeData(path: bumpPath).then(
+          (value) {
+        if (value != null && value.exists)
+          isLightOn = bool.parse(value.child("value").value.toString());
+      },
+    );
   }
 
   @override
